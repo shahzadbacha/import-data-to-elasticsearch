@@ -24,3 +24,6 @@ Save the repository definition to /etc/apt/sources.list.d/elastic-7.x.list:
 - Specify path to your csv file in the input path
 - Define column names in the filter and transformation options (Optional)
 - Specify elastic instance information in the output
+
+Run this command as root:
+``` ./logstash -f /path/to/import-csv.conf
