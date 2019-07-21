@@ -20,4 +20,7 @@ Save the repository definition to /etc/apt/sources.list.d/elastic-7.x.list:
  sudo apt-get install kibana
 ```
 ## Import CSV to ES
-Copy the `import-csv.conf` file to logstash directory `(/usr/share/logstash)` or somewhere else
+- Copy the `import-csv.conf` file to logstash directory `(/usr/share/logstash)` or somewhere else
+- Specify path to your csv file in the input path
+- Define column names in the filter and transformation options (Optional)
+- Specify elastic instance information in the output
