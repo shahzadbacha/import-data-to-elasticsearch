@@ -21,11 +21,21 @@ Save the repository definition to /etc/apt/sources.list.d/elastic-7.x.list:
 ```
 ## Import CSV to ES
 - Copy the `import-csv.conf` file to logstash directory `(/usr/share/logstash)` or somewhere else
-- Specify path to your csv file in the input path
+- Specify path to your csv file in the input csv path
 - Define column names in the filter and transformation options (Optional)
 - Specify elastic instance information in the output
 
-Run this command as root:
+Navigate to logsatsh bin directiry `(/usr/share/logstash/bin)` and run this command as root:
 ```
 ./logstash -f /path/to/import-csv.conf
+```
+
+## Import PG table to ES
+- Copy the `import-pg.conf` file to logstash directory `(/usr/share/logstash)` or somewhere else
+- Put postgres connection string in input jdbc and define your SQL statement
+- Specify elastic instance information in the output
+
+Navigate to logsatsh bin directiry `(/usr/share/logstash/bin)` and run this command as root:
+```
+./logstash -f /path/to/import-pg.conf
 ```
