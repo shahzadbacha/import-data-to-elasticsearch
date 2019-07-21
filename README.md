@@ -32,7 +32,7 @@ Navigate to logsatsh bin directiry `(/usr/share/logstash/bin)` and run this comm
 
 ## Import PG table to ES
 - Copy the `import-pg.conf` file to logstash directory `(/usr/share/logstash)` or somewhere else
-- Put postgres connection string in input jdbc and define your SQL statement
+- Put postgres connection string in input jdbc, specify jdbc driver path and define your SQL statement
 - Specify elastic instance information in the output
 
 Navigate to logsatsh bin directiry `(/usr/share/logstash/bin)` and run this command as root:
