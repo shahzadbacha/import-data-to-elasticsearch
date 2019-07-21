@@ -26,4 +26,6 @@ Save the repository definition to /etc/apt/sources.list.d/elastic-7.x.list:
 - Specify elastic instance information in the output
 
 Run this command as root:
-``` ./logstash -f /path/to/import-csv.conf```
+```
+./logstash -f /path/to/import-csv.conf
+```
